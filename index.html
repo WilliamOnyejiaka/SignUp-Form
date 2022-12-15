@@ -1,50 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>SignUp Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sign Up Form</title>
 </head>
-
 <body>
     <div class="container">
-        <div class="form-title">SignUp</div>
-        <form action="#">
+        <div class="form-title">
+            Sign Up
+        </div>
+
+        <form action="#" class="signup-form">
             <div class="user-details">
-                <div class="input-box">
-                    <span class="details" for="">Full Name</span>
-                    <input type="text" id="full-name" placeholder="Enter Full Name">
+                <div class="form-control">
+                    <label for="full-name" class="input-label">Full Name</label>
+                    <input type="text" id="full-name" placeholder="Enter Full Name" required>
                 </div>
-                <div class="input-box">
-                    <span class="details" for="">Username</span>
-                    <input type="text" id="username" placeholder="Enter Username">
+                <div class="form-control">
+                    <label for="username" class="input-label">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" required>
                 </div>
-                <div class="input-box">
-                    <span class="details" for="">Email</span>
-                    <input type="email" id="email" placeholder="Enter Email">
+                <div class="form-control">
+                    <label for="" class="input-label">Email</label>
+                    <input type="email" id="email" placeholder="Enter Email" required>
                 </div>
-                <div class="input-box">
-                    <span class="details" for="">Email</span>
-                    <input type="email" id="email" placeholder="Enter Email">
+                <div class="form-control">
+                    <label for="password" class="input-label">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
                 </div>
-                <div class="input-box">
-                    <span class="details" for="">Password</span>
-                    <input type="password" id="password" placeholder="Enter Password">
-                </div>
-                <div class="input-box">
-                    <span class="details" for="">Confirm Password</span>
-                    <input type="password" id="confirm-password" placeholder="Confirm Your Password">
+                <div class="form-control">
+                    <label for="confirm-password" class="input-label">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm Your Password" required>
                 </div>
             </div>
 
             <div class="button">
-                <input type="submit" value="Register">
+                <input type="submit" value="Sign Up">
             </div>
         </form>
     </div>
 </body>
-
 </html>

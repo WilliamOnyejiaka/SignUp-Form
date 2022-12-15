@@ -1,0 +1,78 @@
+@import 'config';
+@import 'utilities';
+
+.container .form-title {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.signup-form {
+
+    .user-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 15px 0 12px 0;
+
+
+        .form-control {
+            margin-top: 15px;
+            width: calc(100% / 2 - 20px);
+
+            .input-label {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            input {
+                height: 34px;
+                width: 100%;
+                outline: none;
+                border: 1px solid $ash-color;
+                padding: 15px;
+                border-radius: 3px;
+                border-bottom-width: 2px;
+                transform: all 5s ease;
+
+                &:focus,&:valid {
+                    border-color: $primary-color;
+                }
+            }
+        }
+    }
+
+    input[type='submit']{
+        width: 100%;
+        height: 35px;
+        outline: none;
+        border: none;
+        color: #fff;
+        border-radius: 4px;
+        background: linear-gradient(135deg,$secondary-color,$primary-color);
+        transition: all 1s ease;
+
+        &:hover {
+            background: linear-gradient(-135deg,$secondary-color,$primary-color);
+        }
+    }
+}
+
+@media (max-width: 584px) {
+        
+    .signup-form {
+
+        .user-details {
+            height: 300px;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar{
+                width: 0;
+            }
+
+            .form-control{
+                width: 100%;
+            }
+        }
+    }
+}
+
